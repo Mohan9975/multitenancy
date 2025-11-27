@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/conf/multi-tenancy/settings/wcm/templates/(?!xf-).*]"
+        cq:conf="/conf/multi-tenancy"
+        cq:redirectTarget="/content/multi-tenancy/us/en"
+        cq:template="/conf/multi-tenancy/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="My-Multi-Tanency"
+        sling:configRef="/conf/multi-tenancy"
+        sling:redirect="{Boolean}true"
+        sling:redirectStatus="{Long}302"
+        sling:resourceType="multi-tenancy/components/page">
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+    <us/>
+</jcr:root>

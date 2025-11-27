@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/multi-tenancy",
+        "create path (nt:unstructured) /content/dam/multi-tenancy/jcr:content",
+        "set properties on /content/dam/multi-tenancy/jcr:content\n  set cq:conf{String} to /conf/multi-tenancy\n  set jcr:title{String} to \"My-Multi-Tanency\"\nend"
+    ]
+}
